@@ -78,7 +78,6 @@ with st.sidebar:
 # Initialize chat engine with selected model(Deepseek)
 llm_engine = ChatOllama(
     model=selected_model,
-    base_url="",
     temperature=0.3,
     streaming=True
 )
