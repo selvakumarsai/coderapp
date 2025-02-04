@@ -79,6 +79,7 @@ with st.sidebar:
 llm_engine = ChatOllama(
     model=selected_model,
     base_url="http://localhost:11434",
+    streaming=True,
     temperature=0.3
 )
 
