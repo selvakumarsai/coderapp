@@ -48,7 +48,7 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-st.title("🧠 DeepSeek Code Companion Build by Lokendra Singh")
+st.title("🧠 DeepSeek Code Companion")
 st.caption("🚀 Your AI Pair Programmer with Debugging Superpowers")
 
 # Sidebar configuration
@@ -78,7 +78,7 @@ with st.sidebar:
 # Initialize chat engine with selected model(Deepseek)
 llm_engine = ChatOllama(
     model=selected_model,
-    base_url="http://localhost:11434",
+    base_url="",
     temperature=0.3,
     streaming=True
 )
