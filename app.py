@@ -78,9 +78,7 @@ with st.sidebar:
 # Initialize chat engine with selected model(Deepseek)
 llm_engine = ChatOllama(
     model=selected_model,
-    base_url ="http://192.168.1.123:1234/v1",
-    temperature=0.3,
-    streaming=True
+    temperature=0.3
 )
 
 # System prompt configuration
